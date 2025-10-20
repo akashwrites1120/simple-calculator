@@ -22,7 +22,16 @@ const Calculator = () => {
     "0",
     "EQUALS",
   ];
-  return <div className="min-h-[320px] bg-black">Calculator</div>;
+  return (<div className="min-h-[320px] bg-black flex flex-col gap-4 p-4 rounded-xl">
+    <div >
+      RESULT
+    </div>
+    <div>
+      {keys.map((item, index)=>(
+        <keys/>
+      ))}
+    </div>
+  </div>);
 };
 
 export default Calculator;
